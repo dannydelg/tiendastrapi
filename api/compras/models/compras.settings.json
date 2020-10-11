@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compras",
+  "info": {
+    "name": "compras"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "monto": {
+      "type": "decimal"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "stock": {
+      "type": "integer"
+    }
+  }
+}
