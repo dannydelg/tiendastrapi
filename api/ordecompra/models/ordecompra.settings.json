@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordecompras",
+  "info": {
+    "name": "ordecompra"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "pagoid": {
+      "type": "string"
+    },
+    "cliente": {
+      "type": "json"
+    },
+    "producto": {
+      "type": "json"
+    },
+    "totalpagodolar": {
+      "type": "float"
+    },
+    "totalpagocolon": {
+      "type": "biginteger"
+    },
+    "tipocambio": {
+      "type": "biginteger"
+    },
+    "fechaCompra": {
+      "type": "date"
+    },
+    "ubicacion": {
+      "type": "string",
+      "default": "Pedido recibido, pendiente de alistar"
+    }
+  }
+}

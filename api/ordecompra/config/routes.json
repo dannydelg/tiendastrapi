@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ordecompras/orden/:id",
+      "handler": "ordecompra.findOrden",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordecompras",
+      "handler": "ordecompra.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordecompras/count",
+      "handler": "ordecompra.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordecompras/:id",
+      "handler": "ordecompra.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ordecompras",
+      "handler": "ordecompra.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ordecompras/:id",
+      "handler": "ordecompra.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ordecompras/:id",
+      "handler": "ordecompra.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

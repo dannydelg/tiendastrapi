@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/esperaproductoagotados",
+      "handler": "esperaproductoagotado.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/esperaproductoagotados/count",
+      "handler": "esperaproductoagotado.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/esperaproductoagotados/:id",
+      "handler": "esperaproductoagotado.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/esperaproductoagotados",
+      "handler": "esperaproductoagotado.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/esperaproductoagotados/:id",
+      "handler": "esperaproductoagotado.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/esperaproductoagotados/:id",
+      "handler": "esperaproductoagotado.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esperaproductoagotados",
+  "info": {
+    "name": "esperaproductoagotado"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "comentario": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "datetime"
+    },
+    "infoPromo": {
+      "type": "boolean"
+    },
+    "producto": {
+      "type": "json"
+    }
+  }
+}

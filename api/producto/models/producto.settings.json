@@ -1,25 +1,28 @@
 {
   "kind": "collectionType",
-  "collectionName": "compras",
+  "collectionName": "productos",
   "info": {
-    "name": "compras"
+    "name": "Producto"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "nombre": {
+    "codigo": {
+      "type": "biginteger"
+    },
+    "descripcion": {
       "type": "string"
     },
-    "apellido": {
-      "type": "string"
+    "precio": {
+      "type": "float"
     },
-    "direccion": {
-      "type": "string"
+    "stock": {
+      "type": "biginteger"
     },
-    "monto": {
-      "type": "decimal"
+    "estado": {
+      "type": "boolean"
     },
     "imagen": {
       "collection": "file",
@@ -32,10 +35,7 @@
       "plugin": "upload",
       "required": false
     },
-    "stock": {
-      "type": "integer"
-    },
-    "Categoria": {
+    "categoria": {
       "type": "string"
     }
   }

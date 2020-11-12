@@ -2,56 +2,56 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/compras",
-      "handler": "compras.find",
+      "path": "/productos",
+      "handler": "producto.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compras/count",
-      "handler": "compras.count",
+      "path": "/productos/count",
+      "handler": "producto.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compras/:id",
-      "handler": "compras.findOne",
+      "path": "/productos/:id",
+      "handler": "producto.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/compras",
-      "handler": "compras.create",
+      "path": "/productos",
+      "handler": "producto.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/compras/:id",
-      "handler": "compras.update",
+      "path": "/productos/:id",
+      "handler": "producto.update",
       "config": {
         "policies": []
       }
     },
-    {
+   {
       "method": "DELETE",
-      "path": "/compras/:id",
-      "handler": "compras.delete",
+      "path": "/productos/:id",
+      "handler": "producto.delete",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compras/sendemail/:mail",
-      "handler": "compras.sendEmail",
+      "path": "/productos/categoria/:cat",
+      "handler": "producto.findCategory",
       "config": {
         "policies": []
       }
